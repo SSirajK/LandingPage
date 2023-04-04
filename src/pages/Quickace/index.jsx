@@ -114,7 +114,7 @@ const QuickacePage = () => {
                     Try Free - Signup now
                   </Button>
                 </div>
-                <div className="absolute md:h-[383px] h-[545px] inset-y-[0] my-auto right-[0] w-[54%] md:w-full">
+                <div className="absolute md:hidden md:h-[383px] h-[545px] inset-y-[0] my-auto right-[0] w-[54%] md:w-full">
                   <div className="absolute md:h-[383px] h-[545px] inset-[0] justify-center m-auto w-[98%] sm:w-full">
                     <div className="absolute bottom-[0] md:h-[383px] h-[498px] left-[0] w-[91%] sm:w-full">
                       <div className="absolute md:h-[383px] h-[482px] inset-[0] justify-center m-auto w-[98%] sm:w-full">
@@ -297,7 +297,7 @@ const QuickacePage = () => {
                     </div>
                   </div>
                   <List
-                    className="sm:flex-col flex-row md:gap-10 gap-[295px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 mt-[15px] w-[78%]"
+                    className="sm:flex-col flex-row md:gap-10 gap-[295px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 mt-[15px] w-[80%]"
                     orientation="horizontal"
                   >
                     <div className="bg-white_A700 flex h-20 items-center justify-start p-[9px] rounded-[10px] shadow-bs2 w-full">
