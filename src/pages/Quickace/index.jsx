@@ -114,7 +114,7 @@ const QuickacePage = () => {
                     Try Free - Signup now
                   </Button>
                 </div>
-                <div className="absolute md:h-[383px] h-[545px] inset-y-[0] my-auto right-[0] w-[54%] md:w-full">
+                <div className="absolute md:hidden md:h-[383px] h-[545px] inset-y-[0] my-auto right-[0] w-[54%] md:w-full">
                   <div className="absolute md:h-[383px] h-[545px] inset-[0] justify-center m-auto w-[98%] sm:w-full">
                     <div className="absolute bottom-[0] md:h-[383px] h-[498px] left-[0] w-[91%] sm:w-full">
                       <div className="absolute md:h-[383px] h-[482px] inset-[0] justify-center m-auto w-[98%] sm:w-full">
