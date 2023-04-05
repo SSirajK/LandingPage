@@ -11,16 +11,16 @@ const QuickacePage = () => {
             <div className="bg-gradient  flex flex-col gap-14 items-center justify-start p-8 sm:px-5 w-full">
               <header className="flex md:flex-col flex-row md:gap-5 items-center justify-center md:px-5 w-full">
                 <div className="h-[39px] md:h-[45px] md:mt-0 my-1.5 relative w-[21%] md:w-full">
-                  <Img
-                    src="images/img_logo.svg"
-                    className="h-[5px] ml-auto w-auto"
-                    alt="logo"
-                  />
                   <Text
                     className="absolute h-full inset-[0] justify-center m-auto text-black_900 text-left w-max"
                     as="h3"
                     variant="h3"
                   >
+                    <Img
+                      src="images/img_logo.svg"
+                      className="h-[5px] w-auto float-right"
+                      alt="logo"
+                    />
                     Connect the Dots
                   </Text>
                 </div>
@@ -78,8 +78,8 @@ const QuickacePage = () => {
                   </Button>
                 </div>
               </header>
-              <div className="h-[546px] md:h-[578px] max-w-[1131px] mb-[71px] mx-auto md:px-5 relative w-full">
-                <div className="absolute bottom-[0] flex flex-col items-start justify-start left-[0] w-1/2">
+              <div className="h-[546px] md:mt-24 md:h-[578px] max-w-[1131px] mb-[71px] mx-auto md:px-5 relative w-full">
+                <div className="absolute bottom-[0] flex flex-col items-start justify-start left-[0] w-[50%]">
                   <Button className="bg-gray_50 cursor-pointer font-nunito font-semibold min-w-[200px] py-2.5 rounded-[10px] text-center text-indigo_500_99 text-sm w-auto">
                     Welcome to Connect the Dots..
                   </Button>
@@ -94,7 +94,7 @@ const QuickacePage = () => {
                     </>
                   </Text>
                   <Text
-                    className="font-nunito leading-[150.00%] mt-[55px] text-bluegray_600 text-left w-[87%] sm:w-full"
+                    className="font-nunito leading-[150.00%] mt-[55px] text-bluegray_600 text-left w-[48%] sm:w-full"
                     as="h4"
                     variant="h4"
                   >
@@ -110,11 +110,12 @@ const QuickacePage = () => {
                     selectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
                     unselectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
                   />
+                  
                   <Button className="bg-indigo_500 cursor-pointer font-nunito font-semibold min-w-[240px] mt-[49px] py-[17px] rounded-md text-center text-lg text-white_A700 w-auto">
                     Try Free - Signup now
                   </Button>
                 </div>
-                <div className="absolute md:hidden md:h-[383px] h-[545px] inset-y-[0] my-auto right-[0] w-[54%] md:w-full">
+                <div className="absolute sm:hidden flex flex-col md:h-[383px] h-[545px] inset-y-[0] right-[0] w-[45%] sm:w-full">
                   <div className="absolute md:h-[383px] h-[545px] inset-[0] justify-center m-auto w-[98%] sm:w-full">
                     <div className="absolute bottom-[0] md:h-[383px] h-[498px] left-[0] w-[91%] sm:w-full">
                       <div className="absolute md:h-[383px] h-[482px] inset-[0] justify-center m-auto w-[98%] sm:w-full">
@@ -169,7 +170,7 @@ const QuickacePage = () => {
                         alt="isolationmode"
                       />
                       <div
-                        className="absolute bg-cover bg-no-repeat flex h-max inset-[0] items-start justify-center m-auto md:pr-10 sm:pr-5 pr-[72px] py-[72px] w-full"
+                        className="absolute bg-contain bg-bottom bg-no-repeat flex h-1/2 inset-[0] items-start justify-center m-auto md:pr-10 sm:pr-5 pr-[72px] py-[72px] w-full"
                         style={{
                           backgroundImage: "url('images/img_group17.svg')",
                         }}
@@ -177,7 +178,7 @@ const QuickacePage = () => {
                         <div className="bg-light_blue_100 h-3 mb-28 rounded-[50%] w-3"></div>
                       </div>
                     </div>
-                    <div className="absolute md:h-[55px] h-[84px] left-[2%] top-[7%] w-[23%]">
+                    <div className="absolute sm:hidden h-[84px] left-[2%] top-[7%] w-[30%]">
                       <div className="absolute bg-white_A700 bottom-[0] flex flex-col items-start justify-start p-[13px] right-[0] rounded-[3px] shadow-bs w-[84%]">
                         <Text
                           className="font-semibold text-bluegray_900_99 text-left w-auto"
@@ -205,7 +206,7 @@ const QuickacePage = () => {
                       alt="vectorEightyNine"
                     />
                     <div className="absolute bg-blue_50 h-[22px] right-[31%] rounded-[50%] top-[0] w-[22px]"></div>
-                    <div className="absolute bg-white_A700 flex flex-row font-inter items-center justify-center p-[9px] right-[4%] rounded-[12px] shadow-bs top-[18%] w-2/5">
+                    <div className="absolute sm:hidden md:flex-col bg-white_A700 flex flex-row font-inter items-center justify-center md:p-1 p-[9px] right-[4%] rounded-[12px] shadow-bs top-[18%] w-2/5">
                       <div className="md:h-11 h-[55px] ml-1.5 p-0.5 relative w-14">
                         <div className="absolute flex h-max inset-y-[0] items-center justify-end left-[4%] my-auto outline outline-[1px] outline-blue_800 p-[3px] rounded-[50%] w-11">
                           <div className="bg-orange_200 flex h-[37px] items-center justify-start rounded-[18px] w-[37px]">
@@ -242,8 +243,8 @@ const QuickacePage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute bg-white_A700 bottom-[8%] flex items-center justify-end left-[0] p-2.5 rounded-[15px] shadow-bs1 w-[39%]">
-                    <div className="flex flex-row gap-4 items-center justify-between w-[95%] md:w-full">
+                  <div className="absolute sm:hidden bg-white_A700 bottom-[8%] flex items-center justify-end left-[0] md:py-0 p-3.5 rounded-[15px] shadow-bs1 w-[40%]">
+                    <div className="flex md:flex-col md:gap-0 flex-row gap-4 items-center justify-between w-[95%] md:w-full">
                       <Button className="bg-deep_orange_50 flex h-[47px] items-center justify-center my-[5px] p-2.5 rounded-[23px] w-[47px]">
                         <Img
                           src="images/img_icon.svg"
@@ -272,7 +273,7 @@ const QuickacePage = () => {
             </div>
             <div className="bg-indigo_A201 flex items-center justify-start w-full">
               <div
-                className="bg-cover bg-no-repeat flex h-[588px] items-center justify-start p-4 w-full"
+                className="bg-cover bg-no-repeat flex h-[calc(100% - 200px)] items-center justify-start p-4 w-full"
                 style={{ backgroundImage: "url('images/img_group14.svg')" }}
               >
                 <div className="flex flex-col items-start justify-start max-w-[1072px] mb-[95px] mx-auto md:px-5 w-full">
@@ -296,65 +297,67 @@ const QuickacePage = () => {
                       <div className="bg-purple_100_75 h-2 md:ml-[0] ml-[18px] mr-[58px] rounded-[50%] w-2"></div>
                     </div>
                   </div>
-                  <List
-                    className="sm:flex-col flex-row md:gap-10 gap-[295px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 mt-[15px] w-[80%]"
-                    orientation="horizontal"
-                  >
-                    <div className="bg-white_A700 flex h-20 items-center justify-start p-[9px] rounded-[10px] shadow-bs2 w-full">
-                      <Img
-                        src="images/img_iconfilled.svg"
-                        className="h-14 mb-1.5 w-14"
-                        alt="iconfilled"
-                      />
-                    </div>
-                    <div className="bg-white_A700 flex h-20 items-center justify-start p-3 rounded-[10px] shadow-bs2 w-full">
-                      <Img
-                        src="images/img_iconfilled_pink_a200.svg"
-                        className="h-14 w-14"
-                        alt="iconfilled"
-                      />
-                    </div>
-                    <div className="bg-white_A700 flex h-20 items-center justify-start p-[11px] rounded-[10px] shadow-bs2 w-full">
-                      <Img
-                        src="images/img_location.svg"
-                        className="h-14 w-14"
-                        alt="location"
-                      />
-                    </div>
-                  </List>
                   <div className="flex sm:flex-col flex-row font-nunito md:gap-[53px] items-start justify-between mt-[62px] w-full">
-                    <Text
-                      className="leading-[150.00%] text-left text-white_A700 w-auto"
-                      as="h5"
-                      variant="h5"
-                    >
-                      How we can help to find your vision, reach the goals, see
-                      the leader in you, efficiently Deliver Value, get the best
-                      of yourself
-                    </Text>
-                    <Text
-                      className="leading-[150.00%] text-left text-shadow-ts text-white_A700 w-auto"
-                      as="h5"
-                      variant="h5"
-                    >
-                      We can help by providing a minimum viable process and tool
-                      to see the change you wish to see in your organization.
-                    </Text>
-                    <Text
-                      className="leading-[150.00%] text-left text-white_A700 w-auto"
-                      as="h5"
-                      variant="h5"
-                    >
-                      If you believe in something and the future depends on it,
-                      let’s CONNECT the DOTS...
-                    </Text>
+                    <div className="block pr-8">
+                      <div className="bg-white_A700 flex h-20 items-center justify-start p-[9px] rounded-[10px] shadow-bs2 w-[70px]">
+                        <Img
+                          src="images/img_iconfilled.svg"
+                          className="h-14 mb-1.5 w-14"
+                          alt="iconfilled"
+                        />
+                      </div>
+                      <Text
+                        className="leading-[150.00%] text-left text-white_A700 w-auto mt-20"
+                        as="h5"
+                        variant="h5"
+                      >
+                        How we can help to find your vision, reach the goals,
+                        see the leader in you, efficiently Deliver Value, get
+                        the best of yourself
+                      </Text>
+                    </div>
+                    <div className="block pr-8">
+                      <div className="bg-white_A700 flex h-20 items-center justify-start p-3 rounded-[10px] shadow-bs2 w-[70px]">
+                        <Img
+                          src="images/img_iconfilled_pink_a200.svg"
+                          className="h-14 w-14"
+                          alt="iconfilled"
+                        />
+                      </div>
+                      <Text
+                        className="leading-[150.00%] mt-20 text-left text-shadow-ts text-white_A700 w-auto"
+                        as="h5"
+                        variant="h5"
+                      >
+                        We can help by providing a minimum viable process and
+                        tool to see the change you wish to see in your
+                        organization.
+                      </Text>
+                    </div>
+                    <div className="block">
+                      <div className="bg-white_A700 flex h-20 items-center justify-start p-[11px] rounded-[10px] shadow-bs2 w-[70px]">
+                        <Img
+                          src="images/img_location.svg"
+                          className="h-14 w-14"
+                          alt="location"
+                        />
+                      </div>
+                      <Text
+                        className="leading-[150.00%] mt-20 text-left text-white_A700 w-auto"
+                        as="h5"
+                        variant="h5"
+                      >
+                        If you believe in something and the future depends on
+                        it, let’s CONNECT the DOTS...
+                      </Text>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col md:px-5 relative w-full">
-              <div className="bg-gradient1  flex items-start justify-start mx-auto p-[67px] md:px-10 sm:px-5 w-full">
-                <div className="flex flex-col gap-6 justify-start mb-[42px] md:ml-[0] ml-[41px] w-[86%] md:w-full">
+            <div className="flex flex-col relative w-full">
+              <div className="bg-gradient1 flex justify-between mx-auto p-[67px] md:px-10 sm:px-5 w-full">
+                <div className="flex flex-col gap-6 justify-start mb-[42px] md:ml-[0] ml-[41px] w-[100%] md:w-full">
                   <Text
                     className="md:ml-[0] ml-[588px] text-bluegray_900 text-left w-auto"
                     as="h2"
@@ -403,17 +406,15 @@ const QuickacePage = () => {
                         <Img
                           src="images/img_offer.svg"
                           className="h-10 w-10"
-                          alt="offer"
+                          alt="iconfilled"
                         />
                         <Text
-                          className="font-semibold leading-[150.00%] text-bluegray_600 text-left"
+                          className="sm:flex-1 font-semibold leading-[150.00%] text-bluegray_600 text-left w-[79%] sm:w-full"
                           as="h6"
                           variant="h6"
                         >
-                          <>
-                            Business Alignment with Goals, Execution <br />
+                          Business Alignment with Goals, Execution <br />
                             and Targets
-                          </>
                         </Text>
                       </div>
                       <div className="bg-white_A700_99 flex sm:flex-col flex-row gap-[33px] items-center justify-evenly p-[17px] rounded-[12px] shadow-bs w-full">
@@ -431,74 +432,40 @@ const QuickacePage = () => {
                           tracking, discussion forum
                         </Text>
                       </div>
-                      <Input
-                        wrapClassName="bg-white_A700_99 flex pl-[31px] pr-[35px] py-[25px] rounded-[12px] shadow-bs w-full"
-                        className="font-semibold p-0 placeholder:text-bluegray_600 sm:px-5 text-bluegray_600 text-left text-lg w-full"
-                        name="groupSeven"
-                        placeholder="Self Reviews, Feedback, Notifications"
-                        prefix={
-                          <Img
-                            src="images/img_clock.svg"
-                            className="mr-[33px] my-auto"
-                            alt="clock"
-                          />
-                        }
-                      ></Input>
+                      <div className="bg-white_A700_99 flex sm:flex-col flex-row gap-[33px] items-center justify-evenly p-[17px] rounded-[12px] shadow-bs w-full">
+                        <Img
+                          src="images/img_clock.svg"
+                          className="h-10 w-10"
+                          alt="iconfilled"
+                        />
+                        <Text
+                          className="sm:flex-1 font-semibold leading-[150.00%] text-bluegray_600 text-left w-[79%] sm:w-full"
+                          as="h6"
+                          variant="h6"
+                        >
+                          Self Reviews, Feedback, Notifications
+                        </Text>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="bg-gray_51 font-nunito h-[369px] mt-[-26px] mx-auto pt-[45px] w-full z-[1]">
+              <div className="bg-gray_51 font-nunito sm:h-[669px] md:h-[639px] h-[329px] mt-[-26px] mx-auto pt-[45px] w-full z-[1]">
                 <div className="flex items-center justify-start mb-[-66.98px] mt-auto mx-auto w-[79%] z-[1]">
                   <div className="flex flex-col md:gap-10 gap-[102px] items-center justify-start w-full">
                     <div className="flex items-center justify-start w-full">
                       <div className="flex flex-col gap-3 items-start justify-start w-full">
-                        <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-[89%] md:w-full">
-                          <div className="flex items-center justify-start w-auto md:w-full">
-                            <Text
-                              className="font-medium text-bluegray_900 text-left w-auto"
-                              as="h6"
-                              variant="h6"
-                            >
-                              Contact Details
-                            </Text>
-                          </div>
-                          <div className="flex items-center justify-start md:ml-[0] ml-[375px] w-auto md:w-full">
-                            <Text
-                              className="font-medium text-bluegray_900 text-left w-auto"
-                              as="h6"
-                              variant="h6"
-                            >
-                              Company
-                            </Text>
-                          </div>
-                          <div className="flex items-center justify-start md:ml-[0] ml-[153px] w-auto md:w-full">
-                            <Text
-                              className="font-medium text-bluegray_900 text-left w-auto"
-                              as="h6"
-                              variant="h6"
-                            >
-                              Help
-                            </Text>
-                          </div>
-                          <div className="flex items-center justify-start md:ml-[0] ml-[190px] w-auto md:w-full">
-                            <Text
-                              className="font-medium text-bluegray_900 text-left w-auto"
-                              as="h6"
-                              variant="h6"
-                            >
-                              Legal
-                            </Text>
-                          </div>
-                        </div>
                         <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-full">
                           <div className="flex md:flex-1 items-center justify-start w-auto md:w-full">
                             <Text
-                              className="font-medium leading-[38.00px] text-bluegray_600 text-left"
+                              className="font-medium leading-[38.00px] text-bluegray_600 text-left break-all"
                               as="h6"
                               variant="h6"
                             >
                               <>
+                              <span className="text-bluegray_900">
+                                  Contact Details
+                                </span>{" "}<br/>
                                 2093, Philadelphia Pike, DE 19703, Claymont{" "}
                                 <br />
                                 Companyname@connectingthedots.com
@@ -512,6 +479,10 @@ const QuickacePage = () => {
                               variant="h6"
                             >
                               <>
+                                <span className="text-bluegray_900">
+                                  Company
+                                </span>{" "}
+                                <br />
                                 About <br />
                                 Tide
                                 <br />
@@ -526,6 +497,8 @@ const QuickacePage = () => {
                               variant="h6"
                             >
                               <>
+                                <span className="text-bluegray_900">Help</span>{" "}
+                                <br />
                                 Support and FAQs <br />
                                 Contact Us
                               </>
@@ -538,6 +511,9 @@ const QuickacePage = () => {
                               variant="h6"
                             >
                               <>
+                                <span className="text-bluegray_900">
+                                  Legal
+                                </span>{" "}<br/>
                                 Privacy Policy <br />
                                 Terms and Conditions
                               </>
@@ -546,19 +522,19 @@ const QuickacePage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-[99%] md:w-full">
-                      <div className="flex font-poppins items-center justify-start w-auto md:w-full">
+                    <div className="flex sm:flex-col flex-row md:gap-10 mt-[10px] items-center justify-between w-[99%] md:w-full">
+                      <div className="flex font-poppins items-center justify-start w-auto sm:w-full">
                         <div className="h-[39px] relative w-full">
-                          <Img
-                            src="images/img_logo.svg"
-                            className="h-[5px] ml-auto w-auto"
-                            alt="logo_One"
-                          />
                           <Text
                             className="absolute h-full inset-[0] justify-center m-auto text-black_900 text-left w-max"
                             as="h3"
                             variant="h3"
                           >
+                            <Img
+                              src="images/img_logo.svg"
+                              className="h-[5px] w-auto float-right"
+                              alt="logo"
+                            />
                             Connect the Dots
                           </Text>
                         </div>
