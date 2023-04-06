@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const PagerIndicator = ({
   className,
@@ -11,46 +11,29 @@ const PagerIndicator = ({
 
   ...restProps
 }) => {
-  const [slidesToShow, setSlidesToShow] = React.useState(0);
-  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  React.useEffect(() => {
-    const _slidesToShow = sliderRef?.current?.state?.itemsInSlide;
-    setSlidesToShow(_slidesToShow);
-
+  useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % count);
     }, 2000);
 
     return () => clearInterval(intervalId);
-  }, [sliderRef, count]);
-
-  const getActiveCss = (isActive, transition) => {
-    const baseCss = "inline-block cursor-pointer rounded-[50%] h-[9px] border-indigo_500 border border-solid w-[9px]";
-    const activeBgCss = `bg-${transition}-A700`;
-    const activeCss = `${baseCss} ${activeBgCss}`;
-    return isActive ? activeCss : baseCss;
-  };
+  }, [count]);
 
   return (
     <div className={className} {...restProps}>
       {Array(count)
         .fill(0)
         .map((_, i) => {
-          const isActive =
-            activeIndex >= i * slidesToShow &&
-            activeIndex < (i + 1) * slidesToShow;
-          const transition = isActive ? "indigo" : "white";
+          const isActive = activeIndex === i;
           return (
             <div
               key={"indicator" + i}
-              className={`${
-                isActive ? selectedWrapperCss : unselectedWrapperCss
-              } `}
+              className={`${selectedWrapperCss}`}
             >
               <span
-                className={`${getActiveCss(isActive, transition)} slider-indicator`}
-                onClick={() => sliderRef?.current?.slideTo(i * slidesToShow)}
+                className={`${isActive ? activeCss : inactiveCss}`}
               />
             </div>
           );

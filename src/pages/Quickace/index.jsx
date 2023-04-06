@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Img, Text, Button, PagerIndicator, List, Input } from "components";
+import { NavLink } from "react-router-dom";
 
 const QuickacePage = () => {
   return (
@@ -71,10 +72,10 @@ const QuickacePage = () => {
                     as="h6"
                     variant="h6"
                   >
-                    Login
+                    <NavLink to="/login">Login</NavLink>
                   </Text>
                   <Button className="bg-indigo_500 cursor-pointer font-medium leading-[normal] min-w-[133px] ml-10 md:ml-[0] py-[13px] rounded-md text-center text-lg text-white_A700 w-auto">
-                    Sign Up
+                    <NavLink to="/signup"> Sign Up</NavLink>
                   </Button>
                 </div>
               </header>
@@ -104,13 +105,14 @@ const QuickacePage = () => {
                   <PagerIndicator
                     className="flex h-[9px] mt-[3px] w-[81px]"
                     count={5}
-                    activeCss="inline-block cursor-pointer rounded-[50%] h-[9px] border border-solid w-[9px]"
-                    inactiveCss="inline-block cursor-pointer rounded-[50%] h-[9px] border-indigo_500 border border-solid w-[9px]"
+                    activeCss="inline-block cursor-pointer rounded-[50%] h-[9px] bg-indigo_500 w-[9px]"
+                    activeIndex={1}
+                    inactiveCss="inline-block cursor-pointer rounded-[50%] h-[9px] border-indigo_500 border border-solid bg-white_A700 w-[9px]"
                     selectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
                     unselectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
                   />
                   <Button className="bg-indigo_500 cursor-pointer font-nunito font-semibold min-w-[240px] mt-[49px] py-[17px] rounded-md text-center text-lg text-white_A700 w-auto">
-                    Try Free - Signup now
+                    <NavLink to="/signup">Try Free - Signup now</NavLink>
                   </Button>
                 </div>
                 <div className="absolute md:h-[383px] h-[545px] inset-y-[0] my-auto right-[0] w-[54%] md:w-full">
