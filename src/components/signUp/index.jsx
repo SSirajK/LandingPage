@@ -1,9 +1,9 @@
-import React from 'react'
-import { Col, Row, Image, Button, Form, Input, Typography, Checkbox } from 'antd'
-import StyledLogin from '../login/StyledLogin'
-import LoginImage from '../../assets/login.png'
-import Logo from '../../assets/logo.svg'
-import { validateEmail, validateIsRequired, validateName, validatePassword } from '../../utils/validation'
+import React from 'react';
+import { Col, Row, Image, Button, Form, Input, Typography, Checkbox } from 'antd';
+import StyledLogin from '../login/StyledLogin';
+import LoginImage from '../../assets/images/login.png';
+import Logo from '../../assets/images/logo.svg';
+import { validateEmail, validateIsRequired, validateName, validatePassword } from '../../utils/validation';
 
 const { Title } = Typography
 

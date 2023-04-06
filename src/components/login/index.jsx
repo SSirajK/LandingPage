@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Row, Image, Button, Form, Input, Typography, Checkbox, Divider } from 'antd'
 import StyledLogin from './StyledLogin'
-import LoginImage from '../../assets/login.png'
-import Logo from '../../assets/logo.svg'
+import LoginImage from '../../assets/images/login.png'
+import Logo from '../../assets/images/logo.svg'
 
 const { Title } = Typography
 
