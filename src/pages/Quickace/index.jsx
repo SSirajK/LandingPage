@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Img, Text, Button, PagerIndicator, List, Input } from "components";
+import { NavLink } from "react-router-dom";
 
 const QuickacePage = () => {
   return (
@@ -11,6 +12,11 @@ const QuickacePage = () => {
             <div className="bg-gradient  flex flex-col gap-14 items-center justify-start p-8 sm:px-5 w-full">
               <header className="flex md:flex-col flex-row md:gap-5 items-center justify-center md:px-5 w-full">
                 <div className="h-[39px] md:h-[45px] md:mt-0 my-1.5 relative w-[21%] md:w-full">
+                  <Img
+                    src="images/img_logo.svg"
+                    className="h-[5px] ml-auto w-auto"
+                    alt="logo"
+                  />
                   <Text
                     className="absolute h-full inset-[0] justify-center m-auto text-black_900 text-left w-max"
                     as="h3"
@@ -71,15 +77,15 @@ const QuickacePage = () => {
                     as="h6"
                     variant="h6"
                   >
-                    Login
+                    <NavLink to="/login">Login</NavLink>
                   </Text>
                   <Button className="bg-indigo_500 cursor-pointer font-medium leading-[normal] min-w-[133px] ml-10 md:ml-[0] py-[13px] rounded-md text-center text-lg text-white_A700 w-auto">
-                    Sign Up
+                    <NavLink to="/signup"> Sign Up</NavLink>
                   </Button>
                 </div>
               </header>
-              <div className="h-[546px] md:mt-24 md:h-[578px] max-w-[1131px] mb-[71px] mx-auto md:px-5 relative w-full">
-                <div className="absolute bottom-[0] flex flex-col items-start justify-start left-[0] w-[50%]">
+              <div className="h-[546px] md:h-[578px] max-w-[1131px] mb-[71px] mx-auto md:px-5 relative w-full">
+                <div className="absolute bottom-[0] flex flex-col items-start justify-start left-[0] w-1/2">
                   <Button className="bg-gray_50 cursor-pointer font-nunito font-semibold min-w-[200px] py-2.5 rounded-[10px] text-center text-indigo_500_99 text-sm w-auto">
                     Welcome to Connect the Dots..
                   </Button>
@@ -110,12 +116,11 @@ const QuickacePage = () => {
                     selectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
                     unselectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
                   />
-                  
                   <Button className="bg-indigo_500 cursor-pointer font-nunito font-semibold min-w-[240px] mt-[49px] py-[17px] rounded-md text-center text-lg text-white_A700 w-auto">
-                    Try Free - Signup now
+                    <NavLink to="/signup">Try Free - Signup now</NavLink>
                   </Button>
                 </div>
-                <div className="absolute sm:hidden flex flex-col md:h-[383px] h-[545px] inset-y-[0] right-[0] w-[45%] sm:w-full">
+                <div className="absolute md:h-[383px] h-[545px] inset-y-[0] my-auto right-[0] w-[54%] md:w-full">
                   <div className="absolute md:h-[383px] h-[545px] inset-[0] justify-center m-auto w-[98%] sm:w-full">
                     <div className="absolute bottom-[0] md:h-[383px] h-[498px] left-[0] w-[91%] sm:w-full">
                       <div className="absolute md:h-[383px] h-[482px] inset-[0] justify-center m-auto w-[98%] sm:w-full">
