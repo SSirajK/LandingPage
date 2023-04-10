@@ -55,3 +55,18 @@ export function validateEmail(value) {
   
     return error;
   }
+
+  export function validateUsername(value) {
+    let error;
+    if (!value || value === undefined || value.toString().trim() === "") {
+      error = "Required";
+    } else if (!/^[a-zA-Z0-9_]+$/.test(value)) {
+      error = "Username must contain only letters, numbers, and underscores";
+    } else if (value.length < 3) {
+      error = "Username must be at least 3 characters long";
+    } else if (value.length > 20) {
+      error = "Username cannot be longer than 20 characters";
+    }
+    return error;
+  }
+  

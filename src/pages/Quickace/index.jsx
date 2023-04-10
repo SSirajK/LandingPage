@@ -72,16 +72,21 @@ const QuickacePage = () => {
                   >
                     Contact us
                   </Text>
+                    <NavLink to="/login">
                   <Text
                     className="font-medium md:ml-[0] ml-[108px] md:mt-0 mt-[13px] text-bluegray_900 text-right w-auto"
                     as="h6"
                     variant="h6"
                   >
-                    <NavLink to="/login">Login</NavLink>
+                      Login
                   </Text>
+                      </NavLink>
+                    <NavLink to="/signup"> 
                   <Button className="bg-indigo_500 cursor-pointer font-medium leading-[normal] min-w-[133px] ml-10 md:ml-[0] py-[13px] rounded-md text-center text-lg text-white_A700 w-auto">
-                    <NavLink to="/signup"> Sign Up</NavLink>
+                    Sign Up
+                    
                   </Button>
+                    </NavLink>
                 </div>
               </header>
               <div className="h-[546px] md:h-[578px] max-w-[1131px] mb-[71px] mx-auto md:px-5 relative w-full">
